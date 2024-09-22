@@ -1,0 +1,13 @@
+# Ignorar arquivos de logs do Robot Framework
+*.log
+*.html
+*.xml
+*.png
+
+# Ignorar pastas específicas
+results/
+output/
+reports/
+
+# Ignorar ambiente virtual, se estiver usando Python
+venv/
