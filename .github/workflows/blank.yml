@@ -15,7 +15,7 @@ jobs:
     steps:
     # Faz o checkout do repositório
     - name: Checkout repository
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     # Configura o Python e instala o Robot Framework
     - name: Set up Python
@@ -33,7 +33,7 @@ jobs:
     # Executa os testes do Robot Framework
     - name: Run Robot Framework Tests
       run: |
-        robot --outputdir results .\SwagLabs.robot
+        robot --outputdir results \SwagLabs.robot
 
     # Gera os relatórios
     - name: Upload Test Results
