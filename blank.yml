@@ -25,10 +25,7 @@ jobs:
 
     - name: Install dependencies
       run: |
-        python -m pip install --upgrade pip
-        pip install robotframework
-        # Instale outras dependências necessárias, como bibliotecas de teste ou de APIs
-        # pip install requests robotframework-requests
+        pip install -r requirements.txt
 
     # Executa os testes do Robot Framework
     - name: Run Robot Framework Tests
